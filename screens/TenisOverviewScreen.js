@@ -1,15 +1,15 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { useLayoutEffect } from 'react'
 
-import { TENIS, CATEGORIES } from "../data/dummy_data";
-import TeniItem from "../components/TeniItem";
+import { ARTISTAS, CATEGORIES } from "../data/dummy_data";
+import ArtistaItem from "../components/ArtistaItem";
 
-function TenisOverviewScreen({ route, navigation }){
+function ArtistasOverviewScreen({ route, navigation }){
     const catId = route.params.categoryId
     console.log('catId', catId)
 
-    const displayedTenis = TENIS.filter((teniItem) => {
-        return teniItem.categoryIds.indexOf(catId) >= 0
+    const displayedArtistas = ARTISTAS.filter((ArtistaItem) => {
+        return ArtistaItem.categoryIds.indexOf(catId) >= 0
     })
 
     useLayoutEffect(() => {
@@ -20,17 +20,14 @@ function TenisOverviewScreen({ route, navigation }){
         })
     }, [catId, navigation])
 
-    function renderTeniItem(itemData) {
+    function renderArtistaItem(itemData) {
     
         return(
 
-            <TeniItem
+            <ArtistaItem
                 id={itemData.item.id} 
                 title={itemData.item.title}
                 imageUrl={itemData.item.imageUrl}
-                affordability={itemData.item.affordability}
-                complexity={itemData.item.complexity}
-                duration={itemData.item.duration}
             />
         )
 
@@ -38,17 +35,17 @@ function TenisOverviewScreen({ route, navigation }){
 
     return(
         <View style={styles.container}>
-            <Text>Tenis Overview - { catId }</Text>
+            <Text></Text>
             <FlatList 
-                data={displayedTenis}
+                data={displayedArtistas}
                 keyExtractor={(item) => item.id}
-                renderItem={renderTeniItem}
+                renderItem={renderArtistaItem}
             />
         </View>
     )
 }
 
-export default TenisOverviewScreen
+export default ArtistasOverviewScreen
 
 const styles = StyleSheet.create({
     container: {
