@@ -1,33 +1,30 @@
 import { Image, Text, View, StyleSheet, ScrollView } from "react-native"
 
-import { TENIS } from '../data/dummy_data'
-import TeniDetails from "../components/TeniDetails"
-function TeniDetailScree({route, navigation}) {
-    const teniId = route.params.teniId
+import { ARTISTAS} from '../data/dummy_data'
+import ArtistaDetail from "../components/ArtistaDetail"
 
-    const selectedTeni = TENIS.find((teni) => teni.id === teniId)
+function ArtistaDetailScree({route, navigation}) {
+    const artistaId = route.params.artistaId
+
+    const selectedArtista = ARTISTAS.find((artista) => artista.id === artistaId)
 
     return(
         <ScrollView>
-            <Image style={styles.image} source={{ uri: selectedTeni.imageUrl }} />
-            <Text style={styles.title}>{selectedTeni.title}</Text>
-            <MealDetails 
-                duration={selectedTeni.duration}
-                complexity={selectedTeni.complexity}
-                affordability={selectedTeni.affordability}
-            />
+            <Image style={styles.image} source={{ uri: selectedArtista.imageUrl }} />
+            <Text style={styles.title}>{selectedArtista.title}</Text>
+
             <View>
-                <Text style={styles.subtitle}>Colores</Text>
-                {selectedTeni.colors.map(colors => <Text style={styles.textContent} key={colors}>{colors}</Text>)}
-                <Text style={styles.subtitle}>Talla</Text>
-                {selectedTeni.size.map(size => <Text style={styles.textContent} key={size}>{size}</Text>)}
+                <Text style={styles.subtitle}>Datos</Text>
+                {selectedArtista.datos.map(datos => <Text style={styles.textContent} key={datos}>{datos}</Text>)}
+                <Text style={styles.subtitle}>Información</Text>
+                {selectedArtista.informacion.map(informacion => <Text style={styles.textContent} key={informacion}>{informacion}</Text>)}
             </View>
         </ScrollView>
     )
 
 }
 
-export default TeniDetailScree
+export default ArtistaDetailScree
 
 const styles = StyleSheet.create({
     image: {
