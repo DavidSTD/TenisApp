@@ -4,8 +4,8 @@ import { StatusBar } from 'expo-status-bar';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
-import ArtistasOverviewScreen from './screens/ArtistasOverviewScreen';
-import ArtistaDetailScree from './screens/ArtistaDetailScreen';
+import TenisOverviewScreen from './screens/TenisOverviewScreen';
+import TeniDetailScree from './screens/TeniDetailScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,12 +24,12 @@ export default function App() {
           }}
         >
           <Stack.Screen 
-            name="Generos Musicales" 
+            name="Catalógo" 
             component={CategoriesScreen}
           />
           <Stack.Screen 
-            name="ArtistasOverview" 
-            component={ArtistasOverviewScreen}
+            name="TenisOverview" 
+            component={TenisOverviewScreen}
             options={{
               title: 'All categories',
               headerTintColor: 'white',
@@ -37,8 +37,8 @@ export default function App() {
             }} 
           />
           <Stack.Screen 
-            name="ArtistaDetail" 
-            component={ArtistaDetailScree} 
+            name="TeniDetail" 
+            component={TeniDetailScree} 
           />
 
         </Stack.Navigator>

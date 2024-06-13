@@ -1,30 +1,30 @@
 import { Image, Text, View, StyleSheet, ScrollView } from "react-native"
 
-import { ARTISTAS} from '../data/dummy_data'
-import ArtistaDetail from "../components/ArtistaDetail"
+import {TENIS} from '../data/dummy_data'
+import TeniDetail from "../components/TeniDetail"
 
-function ArtistaDetailScree({route, navigation}) {
-    const artistaId = route.params.artistaId
+function TeniDetailScree({route, navigation}) {
+    const teniId = route.params.teniId
 
-    const selectedArtista = ARTISTAS.find((artista) => artista.id === artistaId)
+    const selectedTeni = TENIS.find((teni) => teni.id === teniId)
 
     return(
         <ScrollView>
-            <Image style={styles.image} source={{ uri: selectedArtista.imageUrl }} />
-            <Text style={styles.title}>{selectedArtista.title}</Text>
+            <Image style={styles.image} source={{ uri: selectedTeni.imageUrl }} />
+            <Text style={styles.title}>{selectedTeni.title}</Text>
 
             <View>
                 <Text style={styles.subtitle}>Datos</Text>
-                {selectedArtista.datos.map(datos => <Text style={styles.textContent} key={datos}>{datos}</Text>)}
-                <Text style={styles.subtitle}>Información</Text>
-                {selectedArtista.informacion.map(informacion => <Text style={styles.textContent} key={informacion}>{informacion}</Text>)}
+                {selectedTeni.datos.map(datos => <Text style={styles.textContent} key={datos}>{datos}</Text>)}
+                <Text style={styles.subtitle}>Descripción</Text>
+                {selectedTeni.informacion.map(informacion => <Text style={styles.textContent} key={informacion}>{informacion}</Text>)}
             </View>
         </ScrollView>
     )
 
 }
 
-export default ArtistaDetailScree
+export default TeniDetailScree
 
 const styles = StyleSheet.create({
     image: {

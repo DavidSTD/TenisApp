@@ -39,11 +39,12 @@ const styles = StyleSheet.create({
     innerContainer: {
         flex: 1,
         padding: 16,
-        borderRadius: 8,
+        borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',
     },
     title: {
+        color: 'white',
         fontWeight: 'bold',
         fontSize: 18,
     }

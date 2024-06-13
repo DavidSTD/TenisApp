@@ -1,360 +1,294 @@
 import Category from '../models/category';
-import Artista from '../models/artista';
+import Tenis from '../models/Tenis';
 
 export const CATEGORIES = [
-  new Category('c1', 'Regional Mexicano', '#A5D6A7'),
-  new Category('c2', 'Rock', '#BDBDBD'),
-  new Category('c3', 'Pop', '#D1C4E9'),
-  new Category('c4', 'Hip Hop', '#64B5F6'),
+  new Category('c1', 'Nike', 'orange'),
+  new Category('c2', 'Vans', 'red'),
+  new Category('c3', 'Lacoste', 'green'),
+  new Category('c4', 'Adidas', '#64B5F6'),
  
 ];
 
-export const ARTISTAS = [
-  new Artista(
+export const TENIS = [
+  new Tenis(
     'a1',
     ['c1',],
-    'Alfredo Olivas',
-    'https://www.kebuena.com.mx/wp-content/uploads/2022/12/Alfredo-Olivas-1.jpg',
+    'Dunk',
+    'https://www.sneakers-actus.fr/wp-content/uploads/2023/11/Shinpei-Ueno-x-Nike-Dunk-Low-SB-Blanche-et-noire.jpg',
     [
-      'NACIMIENTO:',
-      ' 1 de Octubre de 1993 (30 años), Ciudad de Obregón',
-      'PADRE:',
-      ' Alfredo Olivas Valenzuela',
-      'NOMINACIONES:',
-      ' Premio Lo Nuestro a la Canción del Año'
+      'Valor:',
+      '$2,500',
+      'Materiales:',
+      'Los Nike Dunk se componen de Cuero, entresuela de espuma y cuello acolchado. '
     ],
     [
-      'José Alfredo Olivas Rojas, más conocido como Alfredo Olivas, es un cantante, compositor y acordeonista de música regional mexicana especializado en los estilos de banda sinaloense, norteño sinaloense, norteño con tuba, y mariachi. También es conocido como Alfredito o el Patroncito.​'
+      'En 2005, un equipo de Osaka liderado por Shinpei Ueno destacó el arte nocturno del skateboarding japonés. Gracias a sus viajes y 15 años creando la serie de videos alternativos Lenz, ayudó a difundir el estilo de pies veloces y las exploraciones de color y entorno que ahora son el sello del escenario local y del estilo TIGHTBOOTH®.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a2',
     ['c1',],
-    'Ariel Camacho',
-    'https://claudiaperalta.com.mx/wp-content/uploads/2021/02/ARIEL-CAMACHO.png',
+    'Industrial Blue',
+    'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c073ec4-35f6-4f83-bb7f-057bbb07af5a/tenis-grandes-air-jordan-4-retro-industrial-blue-bBK8Zg.png',
     [
-      'NACIMIENTO:',
-      '8 de julio de 1992, Guamúchil',
-      'PADRES:',
-      ' Benito Camacho Sánchez, Reynalda Armida Barraza',
-      'ALBÚM',
-      'El Karma'
+      'Valor:',
+      '$4,599',
+      'Materiales:',
+      'Están compuestos com cuero, material sintético, tela y entresuela de espuma.'
     ],
     [
-      'José Ariel Camacho Barraza, conocido como Ariel Camacho, fue un músico, compositor y multinstrumentista mexicano. Fue vocalista y fundador de Los Plebes del Rancho, con los que emprendió su carrera musical en 2013. Su último álbum en vida fue lanzado en el año 2014 titulado como El Karma.'
+      'Regresa a lo clásico. Los amados AJ4 vuelven con cuero blanco cáscara de huevo premium, nobuk gris neutro y toques llamativos de azul industrial, lo que crea una estética general impecable. Manteniéndonos fiel a la forma, volvimos a rediseñar estratégicamente este ícono con las características originales de 1989 y todos los detalles exclusivos: un logotipo Jumpman audaz, detalles de malla, las famosas "alas" y la marca Nike Air en el talón para darle el toque de herencia.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a3',
     ['c1',],
-    'Jenny Rivera',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFvAUuZzpOfksh7O-YFBsshKJoVLcVkoU8kbZvbaP-hE-3jYLPyqEVmPH4W5wLC__5Gw&usqp=CAU',
+    'Artisanal Red',
+    'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/94b72044-b254-42cd-bfc9-7f42688fc3e2/tenis-air-jordan-1-retro-high-og-BFqZfb.png',
     [
-      'NACIMIENTO',
-      '2 de julio de 1969, Long Beach, California, Estados Unidos',
-      'FALLECIMIENTO:',
-      '9 de diciembre de 2012, Iturbide',
-      'HIJOS:',
-      'Chiquis Rivera, Jenicka Lopez, Johnny Lopez, Jacqie Rivera, Michael Marin',
-      'HERMANOS:',
-      'Lupillo Rivera, Rosie Rivera, Juan Rivera, Gustavo Rivera, Pedro Rivera Jr.',
-      'CONYÚGE:',
-      'Esteban Loaiza (m. 2010–2012), Juan López (m. 1997–2003), José Trinidad Marín (m. 1984–1992)',
-      'PADRES:',
-      'Pedro Rivera, Rosa Saavedra'
+      'Valor:',
+      '$4,199',
+      'Materiales:',
+      'Se elaboran con cuero de varios colores y plantilla espumosa.'
     ],
     [
-      'Dolores Janney Rivera Saavedra, conocida como Jenni Rivera, fue una cantante estadounidense. En Estados Unidos y México se estima que vendió 25 millones de discos, ​ lo que la convierte en la intérprete de banda sinaloense más importante.'
+      'Con la cancha como su lienzo en blanco, el arte inigualable de MJ con la pelota lo consolidó como el jugador de básquetbol con más talento del momento. Todo es gracias a su increíble genio con los saltos y a su capacidad insuperable para rematar cada jugada maestra con carácter. La excelencia de MJ se refleja en esta edición "Artisanal Red" del AJ1 High. Igual que su famoso tiro en suspensión y su actitud elegante, esta impecable combinación de colores ofrece un estilo atemporal que se merece su propia exposición. Póntelo, encuentra tu lienzo y honra el legado.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a4',
     ['c1',],
-    'Espinoza Paz',
-    'https://yucatan.quadratin.com.mx/www/wp-content/uploads/2024/04/Espinoza-Paz-concierto-1160x700.jpg',
+    'Air Force 1',
+    'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4ee7f9e9-9f1f-4395-95f4-ceca25120f39/tenis-grandes-air-force-1-le-sCkTz9.png',
     [
-      'NACIMIENTO:',
-      '29 de octubre de 1981 (edad 42 años), Angostura',
-      'HIJOS:',
-      'Claudia Chávez Kelly, Isidro Chávez Kelly',
-      'PADRES:',
-      ' María de la Paz Espinoza, Isidro Chávez',
-      'ESTATURA:',
-      '1,66 m'
+      'Valor:',
+      '$1,700',
+      'Materiales:',
+      'Se compone de cuero, goma y tela.'
     ],
     [
-      'Isidro Chávez Espinoza, conocido artísticamente como Espinoza Paz.​Es un músico y cantautor mexicano de música regional mexicana; especializado en los estilos de banda sinaloense, norteño y mariachi. Su nombre artístico proviene de su abuela materna y su madre.'
+      'Su diseño, al igual que otros modelos de zapatillas Nike, está inspirado en el baloncesto, por lo que son unas zapatillas deportivas robustas y su suela presenta una plataforma elevada y curvada para brindar un buen soporte en el juego.'
     ],
 
   ),
 
 
-  new Artista(
+  new Tenis(
     'a11',
     ['c2'],
-    'Kurt Cobain',
-    'https://img2.rtve.es/v/16046575?w=1600&preview=01712311552267.jpg',
+    'Old Skool',
+    'https://vansmx.vtexassets.com/arquivos/ids/1726074-800-auto?v=638494226624570000&width=800&height=auto&aspect=true',
     [
-      'NACIMIENTO:',
-      '20 de febrero de 1967, Aberdeen, Washington, Estados Unidos',
-      'FALLECIMIENTO:',
-      '5 de abril de 1994, Seattle, Washington, Estados Unidos',
-      'CONYÚGE:',
-      'Courtney Love (m. 1992–1994)',
-      'HIJAS:',
-      'Frances Bean Cobain',
-      'GRUPOS MUSICALES:',
-      ' Nirvana (1987 – 1994), Fecal Matter (1985 – 1986)',
-
+      'Valor:',
+      '$1,599',
+      'Materiales:',
+      'Diseño bajo con parte superior de lona y cuero, disponible en varios colores.',
+      'Fecha de creación:',
+      'Fue introducido en 1977.'
     ],
     [
-      'Kurt Cobain fue un músico y compositor estadounidense, conocido por haber sido el vocalista, guitarrista y principal compositor de la banda Nirvana. Es considerado como un icono y voz de la generación X.'
+      'Un clásico desde 1977, conocido por su icónica franja lateral.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a22',
     ['c2'],
-    'Axl Rose',
-    'https://media.urgente24.com/p/f9cc74587c835c75c816c90556ec7a94/adjuntos/319/imagenes/002/981/0002981297/1200x0/smart/gettyimages-535921746jpg.jpg',
+    'Sk8-Hi',
+    'https://vansmx.vtexassets.com/arquivos/ids/1524219-800-auto?v=638460421387400000&width=800&height=auto&aspect=true',
     [
-      'NACIMIENTO:',
-      '6 de febrero de 1962 (edad 62 años), Lafayette, Indiana, Estados Unidos',
-      'CONYÚGE',
-      ' Erin Everly (m. 1990–1991)',
-      'GRUPOS MUSICALES:',
-      ' Guns N Roses (Desde 1985), Hollywood Rose, L.A. Guns (1984 – 1984), Rapidfire',
-      'PADRES:',
-      'William Bruce Rose, Sharon E. Rose',
-      'HERMANOS:',
-      ' Amy Bailey, Stuart Bailey'
+      'Valor:',
+      '$1,399',
+      'Materiales:',
+      'Caña, tela y suela de caucho.',
+      'Fecha de creación:',
+      'Se lanzaron a finales de los años 70.'
     ],
     [
-      'William Bruce Rose Jr., originalmente William Bruce Bailey, conocido por su nombre artístico Axl Rose, es un cantante, compositor, guitarrista y pianista estadounidense, ​ conocido por ser el líder y vocalista de la banda de hard rock Guns N'
-      
+      'Un favorito para los skaters, con un diseño que ofrece soporte adicional en el tobillo. Tenis de caña alta con la clásica franja lateral de Vans y construcción reforzada para soportar el desgaste del skateboarding.'
     ],
 
   ),
 
 
-  new Artista(
+  new Tenis(
     'a33',
     ['c2'],
-    'Mago de Oz',
-    'https://www.rafabasa.com/wp-content/uploads/2015/10/2012_1_5001.jpg',
+    'Knu Skool',
+    'https://vansmx.vtexassets.com/arquivos/ids/1818335-800-auto?v=638530431453430000&width=800&height=auto&aspect=true',
     [
-      'ORIGEN:',
-      'Madrid, España',
-      'GENERO:',
-      'Rock en español',
-      'EMPEZO EN:',
-      '1968',
-      'ARTISTAS RELACIONADOS:',
-      'José Andrëa, Rata Blanca, Bürdel King, Warcry, Saurom, Héroes del Silencio, Ska-P, Stratovarius',
+      'Valor:',
+      '$1,699',
+      'Materiales:',
+      'Tela, suela de caucho y gamuza.',
+      'Fecha de creación:',
+      'Uno de los más reciente en la línea Vans, introducido en los últimos años.'
     ],
     [
-      'Mägo de Oz es una banda española de Folk Metal fundada en Madrid el 7 de julio de 1988 por Txus di Fellatio. Consagrada como una de las bandas más reconocidas e importantes del Heavy Metal en español, a su vez siendo la más popular e influyente del Folk Metal hispano'
+      'Un estilo de los 90 inspirado en el pasado, pero construido para hoy. El Knu Skool es una interpretación moderna de un estilo clásico de los años 90, definido por su lengüeta acolchonada y Sidestripe moldeado en 3D, y atado con agujetas con estilo más grueso. Con su perfil llamativo y detalles de estilo inspirados en lo dramático , el Knu Skool juega con el Old Skool original mientras combina un ícono del pasado con las tendencias actuales.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a44',
     ['c2'],
-    'Avril Lavigne',
-    'https://1159025897.rsc.cdn77.org/data/images/full/81377/avril-lavigne.jpg',
+    'Ultrarange',
+    'https://vansmx.vtexassets.com/arquivos/ids/1816615-800-auto?v=638530419328300000&width=800&height=auto&aspect=true',
     [
-      'NACIMIENTO:',
-      ' 27 de septiembre de 1984 (edad 39 años), Belleville, Canadá',
-      'CONYÚGE:',
-      'Chad Kroeger (m. 2013–2015), Deryck Whibley (m. 2006–2010)',
-      'PADRES:',
-      'Jean-Claude Lavigne, Judith-Rosanne Loshaw',
-      'GRUPO MUSICAL:',
-      'Young Artists for Haiti (2010 – 2010)'
+      'Valor:',
+      '$1,899',
+      'Materiales:',
+      'Tela, suela de caucho y una nueva suela para mayor comodidad.',
+      'Fecha de creación:',
+      'Una adición más nueva a la familia Vans.'
     ],
     [
-      'Avril Ramona Lavigne​ ​ es una cantante y compositora canadiense de pop punk.​ Críticos de revistas como Billboard la denominan «la Princesa del Pop Punk».​​ Comenzó su carrera musical en diciembre de 2000, cuando después de una presentación en una librería, despertó el interés del productor L. A'
+      'Diseñado para la comodidad durante todo el día y la exploración. Cuenta con una suela UltraCush para mayor comodidad y una parte superior transpirable para mantener los pies frescos.'
     ],
 
   ),
 
 
-  new Artista(
+  new Tenis(
     'a111',
     ['c3'],
-    'Paty Cantu',
-    'https://cdn2.excelsior.com.mx/media/pictures/2023/10/12/3018133.jpg',
+    'CHAYMON',
+    'https://imagena1.lacoste.com/dw/image/v2/AAUP_PRD/on/demandware.static/-/Sites-master/default/dwaaca7ee1/41CMA0038MX_312_01.jpg?imwidth=915&impolicy=product',
     [
-      'NACIMIENTO:',
-      '25 de noviembre de 1983 (edad 40 años), Houston, Texas, Estados Unidos',
-      'GRUPO MUSICAL:',
-      'Lu (2000 – 2007)',
-      'PADRES:',
-      'Luis Armando Cantú, Mercedes Velasco',
-      'NOMINACIONES:',
-      'World Music Award a la Mejor Actuación Mundial en Vivo',
-      'PELICULAS:',
-      'Un disfraz para Nicolás'
+      'VALOR:',
+      '$2,712',
+      'Materiales:',
+      'Forro de tela, empeine de material sintético y piel y suela de goma.'
     ],
     [
-      'Patricia Giovanna Cantú Velasco, conocida como Paty Cantú, es una cantante, compositora y actriz mexicana'
+      'Con su diseño estilizado único, el Chaymon de caña baja tiene el encanto urbano del día a día. Este sneaker sencillo se inspira en los modelos tradicionales de tenis, modernizándolos con tonos fáciles de llevar y atemporales. El empeine, confeccionado en lujosa piel de napa, se realza con líneas pulidas con clara inspiración en la pista. El sello de la marca lo pone el acabado del cocodrilo verde bordado en el lateral.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a222',
     ['c3'],
-    'Katty Perry',
-    'https://www.billboard.com/wp-content/uploads/2023/11/Katy-Perry-may-2023-billboard-1548.jpg?w=1024',
+    'LEROND PRO',
+    'https://imagena1.lacoste.com/dw/image/v2/AAUP_PRD/on/demandware.static/-/Sites-master/default/dw21451328/45CMA0055_407_01.jpg?imwidth=915&impolicy=product',
     [
-      'NACIMIENTO:',
-      '25 de octubre de 1984 (edad 39 años), Santa Bárbara, California, Estados Unidos',
-      'PAREJA:',
-      'Orlando Bloom (2019–)',
-      'CÓNYUGE:',
-      'Russell Brand (m. 2010–2012)',
-      'NOMINACIONES:',
-      'Premio Grammy al Álbum del Año',
-      'HERMANOS:',
-      'Angela Hudson, David Hudson'
+      'Valor:',
+      '$2,632',
+      'Materiales:',
+      'Forro de tela, empeine de piel y sintéticos, diseño en piel y suela con goma vulcanizada.'
     ],
     [
-      'Katheryn Elizabeth Hudson, más conocida como Katy Perry, es una cantante, compositora y personalidad de televisión estadounidense, que saltó a la fama en 2008 con «I kissed a girl» y «Hot n Cold» de su álbum debut One of the Boys.'
+      'Camina con paso firme gracias a estas clásicos sneakers. Diseño elegante y minimalista cuyo resultado es un estilo fácil.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a333',
     ['c3'],
-    'Carla Morrison',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1AYw5sKWOUpgb1tFjVxa_kjzcQRjD7Pv8BA&s',
+    'GRADUATE',
+    'https://imagena1.lacoste.com/dw/image/v2/AAUP_PRD/on/demandware.static/-/Sites-master/default/dw7c854064/37SMA0022MX_02H_01.jpg?imwidth=915&impolicy=product',
     [
-      'NACIMIENTO:',
-      '19 de julio de 1986 (edad 37 años), Tecate',
-      'HERMANOS:',
-      'Alex Hogan-Morrison',
-      'PADRES:',
-      'Hilario Morrison, Porfiria Flores',
-      'AÑOS ACTIVA:',
-      '2008- presente'
+      'Valor:',
+      '$1,813',
+      'Materiales:',
+      'Parte superior de piel, suela de goma, forros sintéticos y textiles.'
     ],
     [
-      'Carla Patricia Morrison Flores, conocida como Carla Morrison, es una cantante, ​ compositora, ​ actriz, ​ activista​ y productora​ mexicana.'
+      'Presentado en elegantes tonos neutros para un atractivo versátil y fácil de usar, el Graduate es un calzado deportivo atemporal con cordones que ofrece una versión elegante del legado de tenis de Lacoste. Diseñado con una silueta refinada inspirada en la cancha, combina una parte superior de piel con una suela de goma a juego, y tiene un acabado con detalles de lujo para una apariencia y una sensación decididamente premium.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a444',
     ['c3'],
-    'Adele',
-    'https://imagenes.20minutos.es/files/image_640_360/files/fp/uploads/imagenes/2021/10/09/adele.r_d.617-312.jpeg',
+    'LACOSTE',
+    'https://imagena1.lacoste.com/dw/image/v2/AAUP_PRD/on/demandware.static/-/Sites-master/default/dwe07b5066/46CMA0005_2G1_01.jpg?imwidth=915&impolicy=product',
     [
-      'NACIMIENTO:',
-      '5 de mayo de 1988 (edad 36 años), Tottenham, Londres, Reino Unido',
-      'CÓNYUGE:',
-      'Simon Konecki (m. 2018–2021)',
-      'SOCIOS DE COMPOSICIÓN:',
-      'Bruno Mars, Sia, Linda Perry',
-      'PREMIOS:',
-      'Premio Grammy a la Mejor Grabación del Año'
+      'Valor:',
+      '$2,373',
+      'Materiales:',
+      'Parte superior de cuero, gamuza, material sintético y rubber outsole.'
     ],
     [
-      'Adele Laurie Blue Adkins, conocida simplemente como Adele, es una cantautora y multinstrumentista británica.​ Es una de las artistas musicales con mayores ventas del mundo, con más de 120 millones de ventas entre discos y sencillos.​'
+      'La atemporalidad y la excelencia van de la mano al crear el Chaymon. La parte superior de múltiples texturas se eleva a través de lujosos detalles de cuero caído, mientras que los paneles de gamuza de colores contrastantes ofrecen un borde elegante. Para terminar, el icónico cocodrilo hace su aparición a un lado para una firma de firma.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a1111',
     ['c4'],
-    'Paulo Londra',
-    'https://www.losandes.com.ar/resizer/KwIzM-SiK4ixr64Eb3PtfDyHyJQ=/0x0:0x0/980x640/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/ORB76SBB6RE33LE33DCFP24OUE.jpg',
+    'SUPERSTAR ADV',
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78c41bfea78142c59397edca66d0cef1_9366/Tenis_Superstar_ADV_Negro_IG1705_01_standard.jpg',
     [
-      'NACIMIENTO:',
-      '12 de abril de 1998 (edad 26 años), Ciudad de Córdoba, Argentina',
-      'NOMINACIONES:',
-      'Premio Grammy Latino al Mejor Nuevo Artista',
-      'SOCIOS DE COMPOSICIÓN:',
-      'Duki, Bizarrap, Lit Killah, Justin Quiles'
+      'Valor:',
+      '$2,299',
+      'Materiales:',
+      'Se conforman con la parte superior en piel, forro interno textil, y suela de caucho'
     ],
     [
-      'Paulo Ezequiel Londra es un cantante y compositor argentino. Londra surgió de las competencias de freestyle de plaza que se celebraban de forma amateur, como El Quinto Escalón, en donde Londra empezó a ganar reconocimiento. En 2017 lanzó su primer sencillo, «Relax».'
+      'Con sus raíces en las canchas de básquet de los años 70, estos tenis adidas Superstar se actualizan para el parque de skate. Ya sea que estés en casa o en las calles de la ciudad, estos tenis le inyectan rendimiento y estilo a cualquier viaje. La distintiva punta con relieve, una vez diseñada para proteger, ahora simboliza un ícono del calzado. Una capa adicional de puntadas y una lengüeta de una sola pieza brindan la durabilidad que exige el mundo del skate. Viste una leyenda.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a2222',
     ['c4'],
-    'Eminem',
-    'https://generations.fr/media/news/thumb/1110x624_eminem-entre-dans-le-top-10-des-artistes-qui-ont-le-plus-vendu-dans-l-histoire_6515553e59621.webp',
+    'GAZELLE BOLD',
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e745acb29cd248e8994a6820a4ac6a29_9366/Tenis_Gazelle_Amarillo_IF5937_01_standard.jpg',
     [
-      'NACIMIENTO:',
-      '17 de octubre de 1972 (edad 51 años), St. Joseph, Misuri, Estados Unidos',
-      'HIJOS:',
-      'Hailie Jade Scott Mathers, Stevie Laine, Alaina Mathers',
-      'CÓNYUGE:',
-      'Kim Scott (m. 2006–2006), Kim Scott (m. 1999–2001)',
-      'HERMANOS:',
-      'Nathan Samra-Mathers, Michael Mathers, Sarah Mathers'
+      'Valor:',
+      '$2,399',
+      'Materiales:',
+      'Están compuestos con gamuza premium, piel y suela tipo cupsole de caucho.'
     ],
     [
-      'Marshall Bruce Mathers III, conocido como Eminem, es un rapero, productor y actor estadounidense. Se le atribuye la popularización del hip hop en las clases medias y altas de Estados Unidos y es aclamado por la crítica como uno de los mejores raperos de todos los tiempos.​'
+      'Tus tenis casuales favoritos están de vuelta y se reinventan. Estos tenis adidas Gazelle llevan tu estilo del día a día a otro nivel. Originalmente diseñados en los 60 como unos tenis de entrenamiento, los Gazelle ahora son un clásico de la moda urbana que se adapta perfectamente del día a la noche. La gamuza premium y la piel envuelven tus pies con comodidad retro, mientras que la emblemática suela tipo cupsole de caucho brinda una pisada suave. El tirador del talón está confeccionado en un tejido de felpa que le confiere un toque vintage. Las líneas definidas y la estética minimalista de este par causan una gran impresión. Póntelos y luce un clásico.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a3333',
     ['c4'],
-    'Snoop Dogg',
-    'https://themovimientourbano.net/wp-content/uploads/2023/07/snoop-dogg-jpg.webp',
+    'YEEZY BOOST 700',
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6b31ceb2708c4d2aaa6fa9e30140dbc7_9366/YEEZY_BOOST_700_Blanco_EG7487_01_standard.jpg',
     [
-      'NACIMINETO:',
-      '20 de octubre de 1971 (edad 52 años), Long Beach, California, Estados Unidos',
-      'HIJOS:',
-      'Cordell Broadus, Cori Broadus, Julian Corrie Broadus, Corde Broadus',
-      'CÓNYUGE:',
-      'Shante Broadus (m. 1997)',
-      'SOCIOS DE COMPOSICION:',
-      'Dr. Dre, Eminem, Tupac Shakur, Ice Cube'
+      'Valor:',
+      '$5,499',
+      'Materiales:',
+      'Están compuestos por malla, recubierta de ante y piel lisa, acabado en negro con suela voluminosa.'
     ],
     [
-      'Calvin Cordozar Broadus Jr., conocido artísticamente como Snoop Dogg, anteriormente como Snoop Doggy Dogg y en raras ocasiones como Snoop Lion, es un rapero, empresario, productor y actor estadounidense.​ Es uno de los artistas de hip-hop con más éxito en el Gangsta rap.'
+      'Las Yeezy Boost 700 Utility Black aportan un look bicolor elevado a su característica construcción. La parte superior de la zapatilla está fabricada con una base de malla, recubierta de ante y piel lisa para mayor sujeción. Acabada en negro, la voluminosa entresuela continúa el look y aloja una unidad Boost para la amortiguación. La suela exterior está fabricada en goma para ofrecer tracción y un acabado de lujo.'
     ],
 
   ),
 
-  new Artista(
+  new Tenis(
     'a4444',
     ['c4'],
-    'Canserbero',
-    'https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/styles/articulo_760x422/public/2024-05/Canserbero--644x362.jpg?itok=mCYqfj9M',
+    'TYSHAWN',
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b4480f7eb8244cd7bdd9c0e8edaf0438_9366/Tenis_Tyshawn_Negro_IG4113_01_standard.jpg',
     [
-      'NACIMIENTO:',
-      '11 de marzo de 1988, Caracas, Venezuela',
-      'FALLECIMIENTO:',
-      '19 de enero de 2015, Maracay, Venezuela',
-      'CAUSA DE MUERTE:',
-      'Asesinato (apuñalamiento)',
-      'PADRES:',
-      'José Rafael González Ollarves, Leticia Coromoto Oramas',
-      'AÑOS ACTIVO:',
-      '1999-2015'
+      'Valor:',
+      '$2,599',
+      'Materiales:',
+      'Presentan exterior en piel y plantilla con espuma viscoelástica.'
     ],
     [
-      'Tirone José González Orama, conocido artísticamente como Canserbero, fue un rapero, compositor y activista venezolano. Es considerado como uno de los exponentes más significativos e influyentes en la historia del rap latino e independiente.​​ '
+      'Los tenis Tyshawn remasterizados reinventan la silueta original de Tyshawn Jones con una nueva suela y detalles inspirados en el Rey de Nueva York. Inspirados en el calzado clásico del básquet y creados para las calles, los tenis Tyshawn presentan un exterior de piel y amortiguación Adiprene que propoporciona gran estabilidad. La plantilla moldeada y el ribete con espuma viscoelástica alrededor del tobillo brindan un ajuste cómodo, mientras que la suela rediseñada fusiona el excelente contacto y control de la tabla con la durabilidad y gran amortiguación contra impactos. adidas y Tyshawn se vuelven a unir una vez más para ofrecerte el mejor rendimiento y estilo sobre la tabla.'
     ],
 
   )

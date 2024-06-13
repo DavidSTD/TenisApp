@@ -1,7 +1,7 @@
 import {StyleSheet } from 'react-native'
 
 
-function ArtistaDetail({informacion, datos, id, categoryIds, title, imageUrl}){
+function TeniDetail({informacion, datos, id, categoryIds, title, imageUrl}){
     return(
 
         <View style={styles.details}>
@@ -16,7 +16,7 @@ function ArtistaDetail({informacion, datos, id, categoryIds, title, imageUrl}){
 
 }
 
-export default ArtistaDetail
+export default TeniDetail
 
 const styles = StyleSheet.create({
     details: {

@@ -1,24 +1,24 @@
 import { View, Text, Image, Pressable, StyleSheet, Platform } from "react-native"
 import { useNavigation} from '@react-navigation/native'
-import ArtistaDetail from "./ArtistaDetail"
+import TeniDetail from "./TeniDetail"
 
 
-function ArtistaItem({ id, title, imageUrl}){
+function TeniItem({ id, title, imageUrl}){
     console.log('title', title)
     console.log('imageUrl', imageUrl)
 
     const navigation = useNavigation()
    
-    function selectArtistaItemHandler(){
-        navigation.navigate('ArtistaDetail', {artistaId: id})
+    function selectTeniItemHandler(){
+        navigation.navigate('TeniDetail', {teniId: id})
     }
 
     return(
-        <View style={styles.artistaItem}>
+        <View style={styles.teniItem}>
             <Pressable 
                 android_ripple={{ color: '#ccc'}}
                 style={({ pressed }) => (pressed ? styles.buttonPressed : null) } 
-                onPress={()=>selectArtistaItemHandler(id)}
+                onPress={()=>selectTeniItemHandler(id)}
             >
                 <View>
                     <View>
@@ -37,10 +37,10 @@ function ArtistaItem({ id, title, imageUrl}){
 
 }
 
-export default ArtistaItem
+export default TeniItem
 
 const styles = StyleSheet.create({
-    artistaItem: {
+    teniItem: {
         margin: 16,
         borderRadius: 8,
         overflow: Platform.OS === 'android' ? 'hidden' : 'visible',

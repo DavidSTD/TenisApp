@@ -1,15 +1,15 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { useLayoutEffect } from 'react'
 
-import { ARTISTAS, CATEGORIES } from "../data/dummy_data";
-import ArtistaItem from "../components/ArtistaItem";
+import { TENIS, CATEGORIES } from "../data/dummy_data";
+import TeniItem from "../components/TeniItem";
 
-function ArtistasOverviewScreen({ route, navigation }){
+function TenisOverviewScreen({ route, navigation }){
     const catId = route.params.categoryId
     console.log('catId', catId)
 
-    const displayedArtistas = ARTISTAS.filter((ArtistaItem) => {
-        return ArtistaItem.categoryIds.indexOf(catId) >= 0
+    const displayedTenis = TENIS.filter((TeniItem) => {
+        return TeniItem.categoryIds.indexOf(catId) >= 0
     })
 
     useLayoutEffect(() => {
@@ -20,11 +20,11 @@ function ArtistasOverviewScreen({ route, navigation }){
         })
     }, [catId, navigation])
 
-    function renderArtistaItem(itemData) {
+    function renderTeniItem(itemData) {
     
         return(
 
-            <ArtistaItem
+            <TeniItem
                 id={itemData.item.id} 
                 title={itemData.item.title}
                 imageUrl={itemData.item.imageUrl}
@@ -37,15 +37,15 @@ function ArtistasOverviewScreen({ route, navigation }){
         <View style={styles.container}>
             <Text></Text>
             <FlatList 
-                data={displayedArtistas}
+                data={displayedTenis}
                 keyExtractor={(item) => item.id}
-                renderItem={renderArtistaItem}
+                renderItem={renderTeniItem}
             />
         </View>
     )
 }
 
-export default ArtistasOverviewScreen
+export default TenisOverviewScreen
 
 const styles = StyleSheet.create({
     container: {

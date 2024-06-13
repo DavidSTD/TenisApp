@@ -1,4 +1,4 @@
-class Artista {
+class Tenis {
   constructor(
     id,
     categoryIds,
@@ -18,4 +18,4 @@ class Artista {
   }
 }
 
-export default Artista;
+export default Tenis;
